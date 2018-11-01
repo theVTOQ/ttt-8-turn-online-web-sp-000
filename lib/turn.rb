@@ -8,6 +8,7 @@ def turn(board)
     puts "Invalid input."
     turn(board)
   end
+  display_board(board)
 end
 
 def input_to_index(user_input)
