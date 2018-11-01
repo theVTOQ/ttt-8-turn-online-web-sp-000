@@ -7,6 +7,10 @@ def position_taken?(board, index)
   !(entry == " " || entry == "" || entry == nil)
 end
 
+def move(board, index, character = "X")
+  board[index] = character
+end
+
 def display_board(board)
   divider = "-----------"
   puts createRow(board, 0)
