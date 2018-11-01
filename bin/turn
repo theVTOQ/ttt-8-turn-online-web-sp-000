@@ -18,3 +18,7 @@ def turn(board)
     turn(board)
   end
 end
+
+def input_to_index(input)
+  input.strip.to_i - 1
+end
