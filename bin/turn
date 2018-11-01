@@ -13,5 +13,8 @@ def turn(board)
   index = input.to_i
   if valid_move?(index)
     move(board, index)
+  else
+    puts "Invalid input."
+    turn(board)
   end
 end
